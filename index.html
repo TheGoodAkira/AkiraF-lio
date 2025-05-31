@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
+
 <body>
      <header class="container text-center">
     <img src="img/avatar-perfil.png" alt="avatar de Akira" class="rounded-4" width="150" height="150" srcset="">
@@ -22,7 +25,7 @@
         <p class="badge bg-secondary">Criação de Sistemas</p>
     </div>
     </header>
-<main class="container mt-5">
+    <main class="container mt-5">
         <h2>Meus projetos</h2>
         <div class="row">
             <!-- Projeto 1 -->
@@ -33,7 +36,7 @@
                         <h5 class="card-title">My Lady – Romance de com Crítica Social</h5>
                         <p class="card-text">My Lady é uma obra literária de ambientação clássica que retrata um mundo dividido por classes sociais rígidas. A história acompanha uma jovem da Nobreza obrigada a lidar com heranças empresariais e responsabilidades políticas, enquanto vive em uma sociedade marcada por desigualdade e repressão. O conto mistura drama, romance e crítica social.
                         </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
                     </div>
                 </div>
             </div>
@@ -44,7 +47,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Laurent & Émile – Amor em Maré Trágica</h5>
                         <p class="card-text">O conto narra a história de Laurent, um escritor em busca de inspiração que se apaixona por Émile, um marinheiro misterioso. Ambientada em uma época onde a liberdade afetiva era condenada, a narrativa explora a descoberta do amor, o medo, a repressão e o luto.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
                     </div>
                 </div>
             </div>
@@ -57,7 +60,7 @@
                         <h5 class="card-title">Você é Apenas Minha</h5>
                         <p class="card-text">Akira é uma jovem determinada, estudante de medicina, marcada pelo abandono familiar e pela luta diária por um futuro digno. Tudo muda quando cruza o caminho de Klyde — líder de uma poderosa gangue — que decide que ela será sua, custe o que custar.
                         </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
                     </div>
                 </div>
             </div>
@@ -71,16 +74,126 @@
                         <h5 class="card-title">A Galeria dos deuses</h5>
                         <p class="card-text">A Galeria dos Deuses é um projeto dedicado a explorar divindades fascinantes de diferentes mitologias ao redor do mundo. Com foco inicial nas mitologias grega, romana e nórdica, a galeria apresenta curiosidades, histórias e simbolismos de cada deus ou deusa, proporcionando um mergulho acessível e visual na riqueza cultural dessas crenças.
                         </p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal4">Veja o projeto</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modalMyLadyLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMyLadyLabel">My Lady</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        "My Lady" é uma história que se desenrola com a delicadeza dos silêncios e a intensidade dos olhares. A trama aborda temas
+                        de autodescoberta, a dança complexa entre o afeto e o medo, e a coragem de se permitir sentir o que o coração insiste em
+                        esconder.
+                    </p>
+                    <p>
+                        A escrita é marcada por uma atmosfera dramática e sensível, onde cada palavra busca envolver o leitor em uma experiência
+                        íntima e memorável.
+                    </p>
+                    <img src="img/my-lady.png" alt="Imagem do projeto My Lady" class="img-fluid w-100" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/seuusuario/my-lady" target="_blank" class="btn btn-danger me-2">Ver código</a>
+                    <a href="https://seusite.com/my-lady" target="_blank" class="btn btn-outline-danger">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal 2 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modalLaurentEmileLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLaurentEmileLabel">Laurent & Émile – Amor em Maré Trágica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Este conto trágico se passa no século XVIII e acompanha Laurent, um escritor em busca de inspiração, e Émile, um marinheiro
+                        cujo destino está entrelaçado ao de Laurent. O amor deles desafia normas e tempestades, mas é marcado pela dor da
+                        separação inevitável.
+                    </p>
+                    <p>
+                        A narrativa traz um romance profundo, misturado com elementos históricos e uma atmosfera melancólica, que prende e
+                        emociona o leitor até a última palavra.
+                    </p>
+                    <img src="img/laurent-emile.png" alt="Imagem do projeto Laurent & Émile" class="img-fluid w-100" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/seuusuario/laurent-emile" target="_blank" class="btn btn-danger me-2">Ver código</a>
+                    <a href="https://seusite.com/laurent-emile" target="_blank" class="btn btn-outline-danger">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modalVoceEhApenasMinhaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVoceEhApenasMinhaLabel">Você é Apenas Minha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        "Você é Apenas Minha" explora as sombras do amor possessivo e a complexidade dos sentimentos humanos. Uma narrativa
+                        que mergulha em emoções intensas, tensão e paixão, contando uma história que provoca reflexão e arrebatamento.
+                    </p>
+                    <p>
+                        Com uma escrita carregada de drama, este projeto traz personagens reais, falhas e desejos, dando voz aos corações que
+                        lutam para serem livres.
+                    </p>
+                    <img src="img/voce-e-apenas-minha.png" alt="Imagem do projeto Você é Apenas Minha" class="img-fluid w-100" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/seuusuario/voce-e-apenas-minha" target="_blank" class="btn btn-danger me-2">Ver código</a>
+                    <a href="https://seusite.com/voce-e-apenas-minha" target="_blank" class="btn btn-outline-danger">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modalVoceEhApenasMinhaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVoceEhApenasMinhaLabel">Você é Apenas Minha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        "Você é Apenas Minha" explora as sombras do amor possessivo e a complexidade dos sentimentos humanos. Uma narrativa
+                        que mergulha em emoções intensas, tensão e paixão, contando uma história que provoca reflexão e arrebatamento.
+                    </p>
+                    <p>
+                        Com uma escrita carregada de drama, este projeto traz personagens reais, falhas e desejos, dando voz aos corações que
+                        lutam para serem livres.
+                    </p>
+                    <img src="img/voce-e-apenas-minha.png" alt="Imagem do projeto Você é Apenas Minha" class="img-fluid w-100" />
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/seuusuario/voce-e-apenas-minha" target="_blank" class="btn btn-danger me-2">Ver código</a>
+                    <a href="https://seusite.com/voce-e-apenas-minha" target="_blank" class="btn btn-outline-danger">Ver projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <footer class="container py-5">
          <h2>Quer conversar sobre Arte, mundos imaginários, Livros ou outras mitologias? Me chama!</h2>
-    <div>
+      <div>
+        <i class="bi bi-github"></i>
         <a href="https://github.com/TheGoodAkira">GitHub</a>
         <a href="mailto:thegoodakira@gmail.com.br">Email</a>
     </div>

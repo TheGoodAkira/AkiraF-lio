@@ -8,7 +8,7 @@
 
 body{
     font-family: 'schoolbell', cursive;
-
+    color: var(--cor-principal);
 }
 
 h1,h2,h5{
@@ -16,10 +16,15 @@ h1,h2,h5{
     font-weight: 700;
 }
 
-footer a{
-     color: var(--cor-principal)
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
 }
 
-footer a:hover{
-     color: var(--cor-destaque);
+a, .btn-link:hover {
+    color: var(--cor-principal)
+}
+
+a:hover{
+    color: var(--cor-destaque);
 }
