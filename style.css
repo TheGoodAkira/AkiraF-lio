@@ -1,1 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
+:root{
+    --cor-principal: #141821;
+    --cor-secundaria: #990F02;
+    --cor-destaque: #4E0707;
+}
