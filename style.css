@@ -5,3 +5,21 @@
     --cor-secundaria: #990F02;
     --cor-destaque: #4E0707;
 }
+
+body{
+    font-family: 'schoolbell', cursive;
+
+}
+
+h1,h2,h5{
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+footer a{
+     color: var(--cor-principal)
+}
+
+footer a:hover{
+     color: var(--cor-destaque);
+}
